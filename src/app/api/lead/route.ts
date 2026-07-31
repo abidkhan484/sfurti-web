@@ -45,15 +45,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       );
     }
 
-    return NextResponse.json(
-      { success: true, id: leadId, offline: !savedToDb },
-      { status: 201 }
-    );
+    return NextResponse.json({ success: true, id: leadId, offline: !savedToDb }, { status: 201 });
   } catch (error) {
     console.error("Lead creation request error:", error);
-    return NextResponse.json(
-      { success: false, message: "Internal server error" },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: "Internal server error" }, { status: 500 });
   }
 }

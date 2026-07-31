@@ -9,11 +9,15 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const messages = (await getMessages()) as { about?: { meta?: { title?: string; description?: string } } };
+  const messages = (await getMessages()) as {
+    about?: { meta?: { title?: string; description?: string } };
+  };
 
   return {
     title: messages.about?.meta?.title ?? "About Us — Sfurti",
-    description: messages.about?.meta?.description ?? "Why Sfurti exists and our core mission for children's cognitive growth",
+    description:
+      messages.about?.meta?.description ??
+      "Why Sfurti exists and our core mission for children's cognitive growth",
   };
 }
 
