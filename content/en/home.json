@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "header": {
+    "cta": "Notify Me"
+  },
+  "hero": {
+    "headline": "Give their hands something better to do than scroll.",
+    "subheadline": "We are building hands-on wooden cognitive toys to help children cultivate patience, focus, and logical thinking.",
+    "illustration_caption": "Sfurti Cognitive Wooden Toy (Illustration)",
+    "form": {
+      "placeholder": "Enter your phone number",
+      "cta": "Notify me when we launch",
+      "submitting": "Submitting...",
+      "success": "Thank you! We'll keep you updated.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
+  "problem": {
+    "headline": "A challenge every parent recognizes",
+    "body": "Digital screens are designed to capture attention continuously. It's not the parent's fault, nor the child's. But physical objects that require tactile manipulation can restore deep, sustained focus and spatial curiosity."
+  },
+  "thesis": {
+    "headline": "Why physical play is different",
+    "pillars": [
+      {
+        "icon": "hand",
+        "title": "No auto-advance feedback loops",
+        "body": "Physical objects don't infinite-scroll or reward instant gratification. Children learn at their own natural pace."
+      },
+      {
+        "icon": "brain",
+        "title": "Hands build attention",
+        "body": "Manipulating objects with physical resistance builds fine motor skills and sustained, sequential focus."
+      },
+      {
+        "icon": "puzzle",
+        "title": "Real difficulty curves",
+        "body": "A physical puzzle can't be solved by mashing buttons. It teaches true problem solving and patience."
+      }
+    ]
+  },
+  "products": {
+    "headline": "What We're Building",
+    "phase_label": "Phase 1 — Concept & Design",
+    "items": [
+      {
+        "icon": "puzzle",
+        "name": "Wooden Logic Puzzles",
+        "description": "Graduated difficulty puzzles designed to nurture spatial reasoning and patience."
+      },
+      {
+        "icon": "layers",
+        "name": "Building Block Sets",
+        "description": "Open-ended tactile blocks for architectural and structural imagination."
+      },
+      {
+        "icon": "shuffle",
+        "name": "Sorting & Matching Toys",
+        "description": "Engaging sorting activities to enhance hand-eye coordination for young minds."
+      },
+      {
+        "icon": "wrench",
+        "name": "Mechanical Construction Toys",
+        "description": "Simple mechanical assemblies that introduce cause-and-effect reasoning."
+      }
+    ]
+  },
+  "survey": {
+    "headline": "We Want Your Input",
+    "subheadline": "Help us tailor our first batch of toys for Bangladeshi families by answering 4 short questions.",
+    "questions": {
+      "age": {
+        "label": "1. How old is your child?",
+        "options": [
+          { "value": "3-5", "label": "3–5 years" },
+          { "value": "6-9", "label": "6–9 years" },
+          { "value": "10-13", "label": "10–13 years" },
+          { "value": "14+", "label": "14+ years" }
+        ]
+      },
+      "screenTime": {
+        "label": "2. How concerned are you about your child's screen time?",
+        "scale_min": "Not at all (1)",
+        "scale_max": "Very concerned (5)"
+      },
+      "wouldTry": {
+        "label": "3. Would you try a hands-on wooden cognitive alternative?",
+        "options": [
+          { "value": "yes", "label": "Yes, absolutely" },
+          { "value": "maybe", "label": "Maybe" },
+          { "value": "no", "label": "No" }
+        ]
+      },
+      "price": {
+        "label": "4. What price point would you consider reasonable per item?",
+        "options": [
+          { "value": "<500", "label": "Under 500 BDT" },
+          { "value": "500-1000", "label": "500–1,000 BDT" },
+          { "value": "1000-2000", "label": "1,000–2,000 BDT" },
+          { "value": ">2000", "label": "Over 2,000 BDT" }
+        ]
+      },
+      "openFeedback": {
+        "label": "5. What is the hardest part about managing your child's screen time?",
+        "placeholder": "Share your thoughts or experience (optional)",
+        "optional_label": "Optional"
+      }
+    },
+    "submit": "Submit Feedback",
+    "submitting": "Submitting...",
+    "success": {
+      "headline": "Thank you for your feedback!",
+      "body": "Your response will directly shape our upcoming product designs.",
+      "soft_prompt": {
+        "headline": "Would you like an SMS update when we launch?",
+        "placeholder": "Your phone number",
+        "cta": "Notify Me",
+        "skip": "Skip for now",
+        "saved": "Phone number saved! Thank you.",
+        "error": "Something went wrong. Please try again."
+      }
+    }
+  },
+  "faq": {
+    "headline": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "When will Sfurti launch?",
+        "a": "We are currently gathering feedback from Bangladeshi parents. Production of our initial batch will begin once demand is validated."
+      },
+      {
+        "q": "Are these toys safe for children?",
+        "a": "Yes! All products will be crafted from natural, non-toxic wood with smooth rounded edges and child-safe finishes."
+      },
+      {
+        "q": "What age group are these toys designed for?",
+        "a": "Our initial Phase 1 lineup focuses on cognitive development for children aged 3 to 9 years."
+      },
+      {
+        "q": "Why wooden toys over plastic?",
+        "a": "Wood provides rich tactile feedback, durability, and a calm, sensory-friendly play experience free from artificial noise."
+      },
+      {
+        "q": "How can I stay updated?",
+        "a": "Leave your phone number above or follow our official social channels for progress announcements."
+      }
+    ]
+  },
+  "secondary_cta": {
+    "headline": "Stay ahead in your child's development",
+    "subheadline": "Join our launch list for early access and updates.",
+    "form": {
+      "placeholder": "Enter your phone number",
+      "cta": "Notify Me",
+      "submitting": "Submitting...",
+      "success": "Thank you! We'll keep you updated.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
+  "footer": {
+    "tagline": "Hands-on play for growing minds.",
+    "navigation": "Navigation",
+    "social_and_language": "Social Media & Language",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "contact_link": "Contact Us",
+    "copyright": "© 2024 Sfurti. All rights reserved."
+  }
+}

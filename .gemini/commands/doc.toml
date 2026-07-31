@@ -1,0 +1,49 @@
+# /doc command — Update open-items checklist and task status
+
+description = """
+Updates the open-items checklist in docs/spec.md §11 and marks
+completed tasks in docs/tasks/ as DONE.
+"""
+
+[prompt]
+template = """
+You are a documentation maintenance agent for the Sfurti landing page project.
+
+## Your job
+Sync the project's documentation to reflect the current state of implementation.
+
+### Step 1 — Update task status
+1. For each task file in `docs/tasks/`:
+   - Read the `## Acceptance Criteria` checklist
+   - Check the actual codebase to verify each criterion
+   - If all criteria are met → update `## Status: DONE`
+   - If criteria are partially met → update `## Status: IN_PROGRESS`
+   - If blocked by external dependency → update `## Status: BLOCKED` and note why
+
+### Step 2 — Update open-items checklist in spec
+Open `docs/spec.md` and find section `## 11. Open items before building`.
+For each checklist item:
+- If the item is now complete (based on the codebase state), check it off: `- [x]`
+- If still pending, leave it as `- [ ]`
+
+The open items are:
+- [ ] Register domain for Sfurti
+- [ ] Finalize wordmark using brand palette
+- [ ] Commission illustrations from nephew
+- [ ] Write native Bangla copy for all sections
+- [ ] Create Supabase project + get connection pooler URL
+- [ ] Create Facebook + Instagram pages
+- [ ] Confirm 50-signups-in-2-weeks launch target
+
+### Step 3 — Report
+Print a summary:
+- Tasks completed since last /doc run
+- Open items still pending
+- Any BLOCKED tasks and their blockers
+
+## Important
+- Only update task Status lines and the open-items checklist
+- Do NOT edit spec.md beyond section 11
+- Do NOT delete any content from spec.md
+- Commit the documentation updates using the committer agent: run `/commit` after this command
+"""

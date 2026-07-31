@@ -1,0 +1,47 @@
+# /task command — Print next task from the work queue
+
+description = """
+Reads the docs/tasks/ directory and prints the next TODO task in sequence.
+Marks a task as IN_PROGRESS by updating its Status line.
+Optionally dispatches the task to the coder agent for implementation.
+"""
+
+[prompt]
+template = """
+You are a task manager for the Sfurti landing page project.
+
+## Your job
+1. List all task files in `docs/tasks/` (they are named task-01-*.md through task-08-*.md)
+2. Read the `## Status:` line from each file
+3. Find the first task with status `TODO`
+4. Print a summary of that task:
+   - Task number and name
+   - Objective (first paragraph after "## Objective")
+   - Deliverables list
+   - Acceptance criteria
+5. Ask: "Do you want to start this task now? (yes / no / skip to next)"
+   - If "yes": Update the Status line to `IN_PROGRESS` and invoke the coder agent with the full task file content
+   - If "skip": Move to the next TODO task and repeat
+   - If "no": Stop and wait for instructions
+
+## Parallel execution scope
+Tasks 02–07 are designed to be worked on in parallel (they have independent deliverables once task-01 is complete). If you are running as a master orchestrator with multiple subagents available, you may dispatch multiple TODO tasks simultaneously. Each subagent gets the full content of one task file as its prompt, with the coder.md agent instructions prepended.
+
+When dispatching parallel subagents:
+1. Confirm task-01 is DONE before dispatching any other task
+2. Dispatch tasks 02–07 as parallel subagents
+3. Task-08 (deployment) must only be dispatched after tasks 01–07 are all DONE
+4. Track completion by checking the Status line in each task file
+
+## Status values
+- `TODO` — not started
+- `IN_PROGRESS` — being worked on
+- `DONE` — complete (all acceptance criteria met)
+- `BLOCKED` — waiting on another task or external dependency
+
+## File format
+Task files are in `docs/tasks/task-0N-name.md`. The Status line is always:
+`## Status: TODO` (or IN_PROGRESS / DONE / BLOCKED)
+
+Update it by replacing the status word only.
+"""

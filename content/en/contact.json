@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Contact Us — Sfurti",
+    "description": "Get in touch with the Sfurti team"
+  },
+  "headline": "Get in Touch",
+  "body": "We are currently in our pre-launch feedback phase. Reach out to us on social media or leave your contact details.",
+  "social": {
+    "facebook": {
+      "label": "Follow us on Facebook",
+      "href": "https://facebook.com"
+    },
+    "instagram": {
+      "label": "Follow us on Instagram",
+      "href": "https://instagram.com"
+    }
+  },
+  "phone": {
+    "label": "Phone / WhatsApp",
+    "number": "+880 1700-000000"
+  },
+  "back_link": "Back to Home"
+}

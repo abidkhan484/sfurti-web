@@ -1,0 +1,28 @@
+{
+  "model": "gemini-2.5-pro",
+  "context": {
+    "project": "sfurti-landing",
+    "description": "স্ফূর্তি (Sfurti) — cognitive-development toy brand validation landing page for Bangladeshi parents",
+    "defaultLocale": "bn",
+    "primaryViewport": "375px (mobile-first)",
+    "successMetric": "50 phone signups in 2 weeks via organic Facebook/Instagram traffic",
+    "specFile": "docs/spec.md",
+    "businessMissionFile": "docs/business-goal.md",
+    "tasksDir": "docs/tasks/"
+  },
+  "trustedTools": [
+    "read_file",
+    "write_file",
+    "search_web",
+    "grep_search",
+    "list_dir"
+  ],
+  "codeStyle": {
+    "typescript": "strict",
+    "framework": "nextjs-app-router",
+    "styling": "tailwindcss",
+    "i18n": "next-intl",
+    "noHardcodedStrings": true,
+    "mobileFirst": true
+  }
+}

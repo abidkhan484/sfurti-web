@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "About Us — Sfurti",
+    "description": "Why Sfurti exists and our core mission for children's cognitive growth"
+  },
+  "hero": {
+    "headline": "Why Sfurti Exists",
+    "subheadline": "We believe tactile, hands-on play is the foundation for deep attention and problem-solving skills."
+  },
+  "origin": {
+    "headline": "Our Origin",
+    "body": "In today's fast-paced digital environment, parents face a common struggle: keeping children engaged without relying solely on screens. Sfurti was born to create thoughtful, physical alternatives crafted for families in Bangladesh."
+  },
+  "mission": {
+    "headline": "Our Mission",
+    "statement": "To reduce passive screen dependence in children by offering high-quality wooden cognitive toys that foster patience, logic, and creative problem-solving."
+  },
+  "team": {
+    "headline": "Who We Are",
+    "body": "We are a group of parents, designers, and educators passionate about restoring intentional physical play to childhood."
+  },
+  "philosophy": {
+    "headline": "Our Design Philosophy",
+    "body": "1. No over-stimulating plastic noise or screens.\n2. Smooth, non-toxic, eco-friendly natural wood.\n3. Purposeful cognitive mechanisms built into every design."
+  }
+}

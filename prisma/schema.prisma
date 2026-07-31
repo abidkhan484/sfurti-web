@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Lead {
+  id          String    @id @default(cuid())
+  phone       String
+  source      String?   // "hero" | "secondary_cta" | "survey_soft_prompt"
+  utmSource   String?
+  utmMedium   String?
+  utmCampaign String?
+  device      String?   // "mobile" | "desktop"
+  createdAt   DateTime  @default(now())
+
+  surveyResponses SurveyResponse[]
+}
+
+model SurveyResponse {
+  id                String   @id @default(cuid())
+  leadId            String?  // nullable — allow anonymous survey completion
+  lead              Lead?    @relation(fields: [leadId], references: [id])
+  childAgeRange     String   // "3-5" | "6-9" | "10-13" | "14+"
+  screenTimeConcern Int      // 1–5
+  wouldTry          String   // "yes" | "maybe" | "no"
+  priceExpectation  String   // "<500" | "500-1000" | "1000-2000" | ">2000"
+  openFeedback      String?  // optional qualitative text
+  utmSource         String?
+  device            String?
+  createdAt         DateTime @default(now())
+}

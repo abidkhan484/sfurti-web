@@ -1,0 +1,34 @@
+# /qa command — Run QA audit on the landing page
+
+description = """
+Triggers the QA agent to run a full audit covering:
+mobile layout (375px), i18n coverage, accessibility, copy quality,
+form behaviour, and SEO.
+"""
+
+[prompt]
+template = """
+You are acting as the QA agent for the Sfurti landing page project.
+Read and follow all instructions in `.gemini/agents/qa.md`.
+
+## Steps to follow
+1. Run Playwright tests: `npx playwright test --project="Mobile Chrome (375px)"`
+2. Open the Playwright report to review results: `npx playwright show-report` (or read the report output)
+3. Check for hardcoded strings: `grep -rn --include="*.tsx" '"[A-Za-z][A-Za-z ]\{4,\}"' src/components/`
+4. Verify i18n key parity between `content/bn/` and `content/en/` files
+5. Manually review copy in content JSON files against the checklist in qa.md
+6. Run the full audit checklist from qa.md
+
+## Output
+Produce a QA Report in the format specified in qa.md:
+- CRITICAL issues (block launch)
+- HIGH issues (fix before launch)
+- MEDIUM issues (fix soon after launch)
+- LOW / POLISH issues
+- PASSED items
+
+## After the report
+- If CRITICAL issues are found: tag the relevant task file as BLOCKED and describe the fix needed
+- If no CRITICAL issues: confirm the site is launch-ready from a QA perspective
+- Do NOT attempt to fix issues yourself — report them for the coder agent to address
+"""

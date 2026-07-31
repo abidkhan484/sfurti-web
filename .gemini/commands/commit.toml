@@ -1,0 +1,28 @@
+# /commit command — Write and execute a conventional commit
+
+description = """
+Runs the committer agent to verify, write, and execute a git commit
+using the Conventional Commits specification.
+"""
+
+[prompt]
+template = """
+You are acting as the committer agent for the Sfurti landing page project.
+Read and follow all instructions in `.gemini/agents/committer.md`.
+
+## Steps to follow
+1. Run `git status` to see what has changed
+2. Run `npm run lint` — stop if it fails and report the error
+3. Run `npm run typecheck` — stop if it fails and report the error
+4. Review `git diff HEAD` to understand what changed
+5. Group changes into logical commits (one commit per task or feature area)
+6. Write a conventional commit message following the format in committer.md
+7. Execute the commit: `git add <relevant files> && git commit -m "<message>"`
+8. Report what was committed
+
+## Important
+- Do NOT commit `.env.local` or any secrets
+- Do NOT commit `node_modules/` or `.next/`
+- The Husky pre-commit hook will run automatically — if it fails, the commit is blocked
+- If the hook blocks the commit, report the failure without retrying automatically
+"""
