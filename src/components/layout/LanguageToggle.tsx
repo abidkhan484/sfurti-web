@@ -13,7 +13,7 @@ export default function LanguageToggle() {
   };
 
   return (
-    <div className="flex items-center gap-2 text-sm">
+    <div className="flex min-w-[85px] items-center justify-center gap-2 text-sm">
       <button
         onClick={() => switchLocale("bn")}
         data-locale="bn"

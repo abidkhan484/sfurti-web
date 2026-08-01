@@ -16,9 +16,9 @@ export default function NavLinks({
   const pathname = usePathname();
 
   const links = [
-    { href: "/" as const, label: t("home") },
-    { href: "/about" as const, label: t("about") },
-    { href: "/contact" as const, label: t("contact") },
+    { href: "/" as const, label: t("home"), minWidth: "md:min-w-[56px]" },
+    { href: "/about" as const, label: t("about"), minWidth: "md:min-w-[135px]" },
+    { href: "/contact" as const, label: t("contact"), minWidth: "md:min-w-[75px]" },
   ];
 
   return (
@@ -30,10 +30,10 @@ export default function NavLinks({
             key={link.href}
             href={link.href}
             onClick={onItemClick}
-            className={`text-sm transition-colors duration-200 ${
+            className={`inline-flex items-center justify-start text-sm transition-colors duration-200 md:justify-center ${link.minWidth} ${
               isActive
                 ? "border-b-2 border-[#2D6A4F] pb-1 font-semibold text-[#2D6A4F]"
-                : "text-[#1A1A2E]/80 hover:text-[#2D6A4F]"
+                : "border-b-2 border-transparent pb-1 text-[#1A1A2E]/80 hover:text-[#2D6A4F]"
             }`}
           >
             {link.label}
