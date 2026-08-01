@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { setRequestLocale } from "next-intl/server";
 import HeroSection from "@/components/sections/Hero";
 import ProblemSection from "@/components/sections/Problem";
@@ -17,13 +18,19 @@ export default async function HomePage({ params }: Props) {
   setRequestLocale(locale);
   return (
     <>
-      <HeroSection />
+      <Suspense fallback={null}>
+        <HeroSection />
+      </Suspense>
       <ProblemSection />
       <ThesisSection />
       <ProductsSection />
-      <SurveySection />
+      <Suspense fallback={null}>
+        <SurveySection />
+      </Suspense>
       <FAQSection />
-      <SecondaryCTASection />
+      <Suspense fallback={null}>
+        <SecondaryCTASection />
+      </Suspense>
       <Footer />
     </>
   );

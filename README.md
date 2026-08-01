@@ -1,7 +1,5 @@
 # স্ফূর্তি (Sfurti) — Cognitive Toy Brand Landing Page
 
-[![CI](https://github.com/sfurti/sfurti-landing/actions/workflows/ci.yml/badge.svg)](https://github.com/sfurti/sfurti-landing/actions/workflows/ci.yml)
-
 **স্ফূর্তি (Sfurti)** is a cognitive-development toy brand landing page designed for Bangladeshi parents. The site exists to **validate market demand and collect parent feedback** through hands-on cognitive play alternatives before sourcing or launching products.
 
 ---
@@ -25,7 +23,7 @@
 | **Database & ORM** | Supabase (PostgreSQL) via Prisma ORM |
 | **Analytics** | Vercel Analytics + Vercel Speed Insights |
 | **Testing** | Playwright (Mobile & Desktop E2E) |
-| **CI/CD** | GitHub Actions → Vercel Production Deploy |
+| **Deployment** | Vercel Production Deploy |
 
 ---
 
@@ -33,10 +31,8 @@
 
 ```
 sfurti-landing/
-├── .github/
-│   └── workflows/
-│       ├── ci.yml            # Lint, typecheck, and Playwright QA workflow
-│       └── deploy.yml        # Vercel production deploy workflow
+├── deploy/
+│   └── ci.yml            # CI workflow backup (lint, typecheck, Playwright QA)
 ├── content/
 │   ├── bn/                   # Native Bangla copy (source of truth)
 │   │   ├── home.json
@@ -47,6 +43,7 @@ sfurti-landing/
 │       ├── about.json
 │       └── contact.json
 ├── docs/
+│   ├── deployment-guide.md   # Supabase & Vercel deployment guide
 │   ├── spec.md               # Full technical specification
 │   ├── business-goal.md      # Business mission & brand guidelines
 │   └── tasks/                # Detailed implementation tasks (01-08)
