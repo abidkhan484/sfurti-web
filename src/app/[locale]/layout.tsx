@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import AnalyticsProviders from "@/components/analytics/AnalyticsProviders";
 import "../globals.css";
 
 type Props = {
@@ -44,6 +45,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />
+        <AnalyticsProviders />
       </body>
     </html>
   );
