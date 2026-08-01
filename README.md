@@ -32,7 +32,8 @@
 ```
 sfurti-landing/
 ├── deploy/
-│   └── ci.yml            # CI workflow backup (lint, typecheck, Playwright QA)
+│   ├── ci.yml            # CI workflow backup (lint, typecheck, Playwright QA)
+│   └── deploy.yml        # GitHub Pages / Vercel CLI workflow backup
 ├── content/
 │   ├── bn/                   # Native Bangla copy (source of truth)
 │   │   ├── home.json
