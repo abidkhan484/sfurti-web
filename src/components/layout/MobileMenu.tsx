@@ -12,7 +12,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="animate-in slide-in-from-top border-b border-[#2D6A4F]/20 bg-[#FAF3E0] px-4 pt-2 pb-6 shadow-lg duration-200 md:hidden">
+    <div className="animate-in slide-in-from-top border-b border-[#1B4332]/20 bg-[#FAF3E0] px-4 pt-2 pb-6 shadow-lg duration-200 md:hidden">
       <div className="flex flex-col gap-4">
         <NavLinks
           onItemClick={onClose}

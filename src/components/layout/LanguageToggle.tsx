@@ -19,8 +19,8 @@ export default function LanguageToggle() {
         data-locale="bn"
         className={
           currentLocale === "bn"
-            ? "cursor-pointer font-bold text-[#2D6A4F] underline"
-            : "cursor-pointer text-[#1A1A2E]/60 transition-colors hover:text-[#2D6A4F]"
+            ? "cursor-pointer font-bold text-[#1B4332] underline"
+            : "cursor-pointer text-[#1A1A2E]/60 transition-colors hover:text-[#1B4332]"
         }
         type="button"
         aria-label="Switch to Bangla"
@@ -33,8 +33,8 @@ export default function LanguageToggle() {
         data-locale="en"
         className={
           currentLocale === "en"
-            ? "cursor-pointer font-bold text-[#2D6A4F] underline"
-            : "cursor-pointer text-[#1A1A2E]/60 transition-colors hover:text-[#2D6A4F]"
+            ? "cursor-pointer font-bold text-[#1B4332] underline"
+            : "cursor-pointer text-[#1A1A2E]/60 transition-colors hover:text-[#1B4332]"
         }
         type="button"
         aria-label="Switch to English"

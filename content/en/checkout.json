@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Complete Your Order | Sfurti",
+    "description": "Secure Cash on Delivery order submission for Sfurti cognitive toys."
+  },
+  "cart_summary": {
+    "title": "Your Order Summary",
+    "empty": "Your cart is empty.",
+    "subtotal": "Subtotal",
+    "delivery": "Delivery Fee",
+    "delivery_free": "Free (Launch Offer)",
+    "total": "Total Amount",
+    "item_count": "{count} items"
+  },
+  "form": {
+    "title": "Shipping Details",
+    "name_label": "Full Name",
+    "name_placeholder": "e.g. Tanvir Ahmed",
+    "phone_label": "Mobile Phone (11 digits)",
+    "phone_placeholder": "017XXXXXXXX",
+    "address_label": "Full Delivery Address",
+    "address_placeholder": "e.g. House 12, Road 4, Block C, Mirpur 10, Dhaka",
+    "city_label": "City / District",
+    "city_default": "Dhaka",
+    "note_label": "Order Notes (Optional)",
+    "note_placeholder": "e.g. Please deliver after 4 PM",
+    "payment_method": {
+      "title": "Payment Option",
+      "cod_title": "Cash on Delivery (COD)",
+      "cod_desc": "Pay upon receiving your products at your doorstep. No upfront payment required."
+    },
+    "submit_button": "Confirm Order ({amount} BDT)",
+    "submitting": "Submitting Order...",
+    "errors": {
+      "name_required": "Please enter your name.",
+      "phone_invalid": "Please provide a valid 11-digit mobile phone number (e.g. 01712345678).",
+      "address_required": "Please enter your delivery address.",
+      "cart_empty": "Your cart must contain at least one product.",
+      "server_error": "Failed to submit your order. Please try again."
+    }
+  },
+  "success": {
+    "title": "Your Order Has Been Successfully Placed!",
+    "order_number_label": "Order Tracking Code:",
+    "thank_you": "Thank you for choosing Sfurti. Our representative will call your mobile number shortly to verify delivery.",
+    "summary_title": "Order Details",
+    "shipping_to": "Shipping Address",
+    "payment_type": "Payment Method:",
+    "cod_value": "Cash on Delivery (Pay upon receipt)",
+    "back_home": "Return to Home",
+    "continue_shopping": "Browse Products"
+  }
+}

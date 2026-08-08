@@ -6,6 +6,8 @@ import Header from "@/components/layout/Header";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import AnalyticsProviders from "@/components/analytics/AnalyticsProviders";
+import { CartProvider } from "@/context/CartContext";
+import CartDrawer from "@/components/cart/CartDrawer";
 import "../globals.css";
 
 type Props = {
@@ -40,8 +42,11 @@ export default async function LocaleLayout({ children, params }: Props) {
       </head>
       <body className="flex min-h-screen flex-col bg-[#FAF3E0] font-sans text-[#1A1A2E] antialiased">
         <NextIntlClientProvider messages={messages}>
-          <Header locale={locale} />
-          <main className="flex-grow">{children}</main>
+          <CartProvider>
+            <Header locale={locale} />
+            <main className="flex-grow">{children}</main>
+            <CartDrawer locale={locale} />
+          </CartProvider>
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />
@@ -50,3 +55,4 @@ export default async function LocaleLayout({ children, params }: Props) {
     </html>
   );
 }
+

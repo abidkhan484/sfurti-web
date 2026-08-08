@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Our Cognitive Wooden Toys Collection | Sfurti",
+    "description": "Screen-free, attention and critical thinking building cognitive wooden toys for children aged 3 to 14."
+  },
+  "header": {
+    "title": "Sfurti Cognitive Toy Collection",
+    "subtitle": "Discover hands-on learning that fosters deep attention, patience, and logical reasoning."
+  },
+  "filters": {
+    "all": "All Products",
+    "age_label": "Filter by Age:",
+    "category_label": "Category:",
+    "ages": {
+      "all": "All Ages",
+      "3-5": "3–5 Years",
+      "6-9": "6–9 Years",
+      "10-13": "10–13 Years",
+      "14+": "14+ Years"
+    },
+    "categories": {
+      "all": "All Categories",
+      "puzzles": "Logic Puzzles",
+      "building": "Building Blocks",
+      "sorting": "Shape Sorters",
+      "mechanical": "Mechanical Sets"
+    }
+  },
+  "actions": {
+    "view_details": "View Details",
+    "order_now": "Order Now",
+    "add_to_cart": "Add to Cart",
+    "in_stock": "Available for Order",
+    "preorder": "Pre-order"
+  },
+  "items": [
+    {
+      "id": "logic-puzzle-pro",
+      "slug": "logic-puzzle-pro",
+      "name": "Cognitive Wooden Logic Puzzle",
+      "tagline": "Step-by-step spatial logic & problem solving for curious minds",
+      "description": "Designed to cultivate visual spatial thinking and sequential reasoning in growing children. Handcrafted with natural wood and non-toxic finishes.",
+      "price": 1250,
+      "originalPrice": 1500,
+      "ageRange": "6-9",
+      "category": "puzzles",
+      "inStock": true,
+      "icon": "puzzle",
+      "image": "/images/products/logic-puzzle.svg",
+      "benefits": [
+        "Sustained focus & concentration",
+        "Patient problem solving",
+        "Fine hand-eye coordination"
+      ],
+      "specs": {
+        "material": "Natural wood with food-grade finishes",
+        "pieces": "24 wooden puzzle blocks",
+        "safety": "100% smooth finished child-safe edges"
+      }
+    },
+    {
+      "id": "building-blocks-master",
+      "slug": "building-blocks-master",
+      "name": "3D Architect Building Block Set",
+      "tagline": "Unlocking 3D spatial thinking and creative structural exploration",
+      "description": "Craft unique structures and buildings using precision-cut wooden blocks. Gives children the pride of physical creation.",
+      "price": 1650,
+      "originalPrice": 1900,
+      "ageRange": "3-5",
+      "category": "building",
+      "inStock": true,
+      "icon": "layers",
+      "image": "/images/products/building-blocks.svg",
+      "benefits": [
+        "Spatial geometry mastery",
+        "Creative structural imagination",
+        "Finger motor strength development"
+      ],
+      "specs": {
+        "material": "Mahogany & Pine wood",
+        "pieces": "40 architectural blocks",
+        "safety": "Non-toxic natural oil finish"
+      }
+    },
+    {
+      "id": "shape-sorter-classic",
+      "slug": "shape-sorter-classic",
+      "name": "Tactile Shape Sorting Box",
+      "tagline": "Essential hand-eye coordination and color recognition for toddlers",
+      "description": "Matching shapes and colors in a physical wooden box builds early tactile awareness and focus without screen distractions.",
+      "price": 950,
+      "originalPrice": 1150,
+      "ageRange": "3-5",
+      "category": "sorting",
+      "inStock": true,
+      "icon": "shuffle",
+      "image": "/images/products/shape-sorter.svg",
+      "benefits": [
+        "Shape and color recognition",
+        "Tactile sensory engagement",
+        "Early focus development"
+      ],
+      "specs": {
+        "material": "Solid natural timber",
+        "pieces": "12 distinct geometric shapes",
+        "safety": "Child-safe water-based paint"
+      }
+    },
+    {
+      "id": "mechanical-builder-set",
+      "slug": "mechanical-builder-set",
+      "name": "Mechanical Construction Kit",
+      "tagline": "Hands-on exploration of simple machines and mechanics",
+      "description": "Assemble gears, bolts, wheels, and mechanisms. A practical introduction to mechanical logic for young aspiring engineers.",
+      "price": 1850,
+      "originalPrice": 2100,
+      "ageRange": "10-13",
+      "category": "mechanical",
+      "inStock": true,
+      "icon": "wrench",
+      "image": "/images/products/mechanical-set.svg",
+      "benefits": [
+        "Mechanical logic & mechanics",
+        "Complex problem solving",
+        "Engineering foundations"
+      ],
+      "specs": {
+        "material": "Eco-friendly hard wood",
+        "pieces": "35 interlocking gears & bolts",
+        "safety": "Smooth polished edges"
+      }
+    }
+  ]
+}

@@ -17,6 +17,7 @@ export default function NavLinks({
 
   const links = [
     { href: "/" as const, label: t("home"), minWidth: "md:min-w-[56px]" },
+    { href: "/products" as const, label: t("products"), minWidth: "md:min-w-[90px]" },
     { href: "/about" as const, label: t("about"), minWidth: "md:min-w-[135px]" },
     { href: "/contact" as const, label: t("contact"), minWidth: "md:min-w-[75px]" },
   ];
@@ -32,8 +33,8 @@ export default function NavLinks({
             onClick={onItemClick}
             className={`inline-flex items-center justify-start text-sm transition-colors duration-200 md:justify-center ${link.minWidth} ${
               isActive
-                ? "border-b-2 border-[#2D6A4F] pb-1 font-semibold text-[#2D6A4F]"
-                : "border-b-2 border-transparent pb-1 text-[#1A1A2E]/80 hover:text-[#2D6A4F]"
+                ? "border-b-2 border-[#1B4332] pb-1 font-semibold text-[#1B4332]"
+                : "border-b-2 border-transparent pb-1 text-[#1A1A2E]/80 hover:text-[#1B4332]"
             }`}
           >
             {link.label}
